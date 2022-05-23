@@ -10,9 +10,8 @@ export namespace Components {
         "label"?: string;
     }
     interface RuiAvatar {
-        "class": string;
-        "label": string;
-        "type": string;
+        "size"?: "3" | "4" | "6" | "8";
+        "type"?: "rounded-full" | "rounded-md" | "rounded-lg" | "rounded-full" | "rounded-xl";
     }
     interface RuiButton {
         "label": string;
@@ -25,9 +24,10 @@ export namespace Components {
     }
     interface RuiDivider {
         "colour"?: string;
-        "type": string;
+        "type": "horizontal" | "vertical";
     }
     interface RuiInput {
+        "elemName": string;
         "floatingLabel"?: string;
         "label"?: string;
         "placeholder"?: string;
@@ -179,9 +179,8 @@ declare namespace LocalJSX {
         "label"?: string;
     }
     interface RuiAvatar {
-        "class"?: string;
-        "label"?: string;
-        "type"?: string;
+        "size"?: "3" | "4" | "6" | "8";
+        "type"?: "rounded-full" | "rounded-md" | "rounded-lg" | "rounded-full" | "rounded-xl";
     }
     interface RuiButton {
         "label"?: string;
@@ -194,9 +193,10 @@ declare namespace LocalJSX {
     }
     interface RuiDivider {
         "colour"?: string;
-        "type"?: string;
+        "type"?: "horizontal" | "vertical";
     }
     interface RuiInput {
+        "elemName"?: string;
         "floatingLabel"?: string;
         "label"?: string;
         "placeholder"?: string;

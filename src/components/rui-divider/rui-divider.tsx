@@ -8,7 +8,7 @@ import { Component, h, Prop } from "@stencil/core";
 
 export class RuiDivider {
     @Prop() colour?: string = "#0c0c0c";
-    @Prop() type: string = "horizontal";
+    @Prop() type: "horizontal" | "vertical";
 
     render(){
         return (

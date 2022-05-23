@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
-    <title>Stencil Component Starter</title>
 
-    <script type="module" src="/build/ruskel-stencil.esm.js"></script>
-    <script nomodule src="/build/ruskel-stencil.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="max-w-lg p-16 bg-stratos-800">
-    <h1>Stencil Component Proj</h1>
-    <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
-    <rui-pill label="processing" icon-before >
-      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-    </rui-pill>
-    <rui-button label="Click me!"></rui-button>
-    <rui-divider colour="#00d9ff"></rui-divider>
-      <rui-checkbox cbox-name="avalanche" colour="#ed194a" label-before>Avalanche</rui-checkbox>
-      <rui-checkbox>Fantom</rui-checkbox>
-      <div class="mt-24">
-        <rui-input label="Wallet Address" floating-label="Darsenite">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
-        </rui-input>
-      </div>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+  <title>Stencil Component Starter</title>
+
+  <script type="module" src="/build/ruskel-stencil.esm.js"></script>
+  <script nomodule src="/build/ruskel-stencil.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="global.css"></script>
+</head>
+
+<body class="p-20 w-fit bg-stratos-800">
+  <h1 class="desktop-hero">Stencil Component Proj</h1>
+  <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
+  <rui-pill label="processing" icon-before>
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+    </svg>
+  </rui-pill>
+  <rui-button label="Click me!"></rui-button>
+  <rui-divider colour="#00d9ff"></rui-divider>
+  <rui-checkbox cbox-name="avalanche" colour="#ed194a" label-before>Avalanche</rui-checkbox>
+  <rui-checkbox>Fantom</rui-checkbox>
+  <rui-avatar/>
+</body>
+
 </html>
