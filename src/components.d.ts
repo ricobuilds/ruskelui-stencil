@@ -6,25 +6,18 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface RuiAlert {
-        "label"?: string;
-    }
     interface RuiAvatar {
-        "size"?: "3" | "4" | "6" | "8";
-        "type"?: "rounded-full" | "rounded-md" | "rounded-lg" | "rounded-full" | "rounded-xl";
+        "size"?: "6" | "8" | "10" | "12";
+        "type"?: "base" | "rounded";
     }
     interface RuiButton {
         "label": string;
     }
     interface RuiCheckbox {
-        "cboxName": string;
         "colour": string;
         "labelAfter"?: boolean;
         "labelBefore"?: boolean;
-    }
-    interface RuiDivider {
-        "colour"?: string;
-        "type": "horizontal" | "vertical";
+        "name": string;
     }
     interface RuiInput {
         "elemName": string;
@@ -37,9 +30,6 @@ export namespace Components {
     }
     interface RuiModal {
         "label"?: string;
-    }
-    interface RuiPagination {
-        "label": string;
     }
     interface RuiPill {
         "bgStyle": string;
@@ -66,12 +56,6 @@ export namespace Components {
     }
 }
 declare global {
-    interface HTMLRuiAlertElement extends Components.RuiAlert, HTMLStencilElement {
-    }
-    var HTMLRuiAlertElement: {
-        prototype: HTMLRuiAlertElement;
-        new (): HTMLRuiAlertElement;
-    };
     interface HTMLRuiAvatarElement extends Components.RuiAvatar, HTMLStencilElement {
     }
     var HTMLRuiAvatarElement: {
@@ -90,12 +74,6 @@ declare global {
         prototype: HTMLRuiCheckboxElement;
         new (): HTMLRuiCheckboxElement;
     };
-    interface HTMLRuiDividerElement extends Components.RuiDivider, HTMLStencilElement {
-    }
-    var HTMLRuiDividerElement: {
-        prototype: HTMLRuiDividerElement;
-        new (): HTMLRuiDividerElement;
-    };
     interface HTMLRuiInputElement extends Components.RuiInput, HTMLStencilElement {
     }
     var HTMLRuiInputElement: {
@@ -113,12 +91,6 @@ declare global {
     var HTMLRuiModalElement: {
         prototype: HTMLRuiModalElement;
         new (): HTMLRuiModalElement;
-    };
-    interface HTMLRuiPaginationElement extends Components.RuiPagination, HTMLStencilElement {
-    }
-    var HTMLRuiPaginationElement: {
-        prototype: HTMLRuiPaginationElement;
-        new (): HTMLRuiPaginationElement;
     };
     interface HTMLRuiPillElement extends Components.RuiPill, HTMLStencilElement {
     }
@@ -157,15 +129,12 @@ declare global {
         new (): HTMLRuiTooltipElement;
     };
     interface HTMLElementTagNameMap {
-        "rui-alert": HTMLRuiAlertElement;
         "rui-avatar": HTMLRuiAvatarElement;
         "rui-button": HTMLRuiButtonElement;
         "rui-checkbox": HTMLRuiCheckboxElement;
-        "rui-divider": HTMLRuiDividerElement;
         "rui-input": HTMLRuiInputElement;
         "rui-loader": HTMLRuiLoaderElement;
         "rui-modal": HTMLRuiModalElement;
-        "rui-pagination": HTMLRuiPaginationElement;
         "rui-pill": HTMLRuiPillElement;
         "rui-radio": HTMLRuiRadioElement;
         "rui-select": HTMLRuiSelectElement;
@@ -175,25 +144,18 @@ declare global {
     }
 }
 declare namespace LocalJSX {
-    interface RuiAlert {
-        "label"?: string;
-    }
     interface RuiAvatar {
-        "size"?: "3" | "4" | "6" | "8";
-        "type"?: "rounded-full" | "rounded-md" | "rounded-lg" | "rounded-full" | "rounded-xl";
+        "size"?: "6" | "8" | "10" | "12";
+        "type"?: "base" | "rounded";
     }
     interface RuiButton {
         "label"?: string;
     }
     interface RuiCheckbox {
-        "cboxName"?: string;
         "colour"?: string;
         "labelAfter"?: boolean;
         "labelBefore"?: boolean;
-    }
-    interface RuiDivider {
-        "colour"?: string;
-        "type"?: "horizontal" | "vertical";
+        "name"?: string;
     }
     interface RuiInput {
         "elemName"?: string;
@@ -205,9 +167,6 @@ declare namespace LocalJSX {
         "label"?: string;
     }
     interface RuiModal {
-        "label"?: string;
-    }
-    interface RuiPagination {
         "label"?: string;
     }
     interface RuiPill {
@@ -234,15 +193,12 @@ declare namespace LocalJSX {
         "label"?: string;
     }
     interface IntrinsicElements {
-        "rui-alert": RuiAlert;
         "rui-avatar": RuiAvatar;
         "rui-button": RuiButton;
         "rui-checkbox": RuiCheckbox;
-        "rui-divider": RuiDivider;
         "rui-input": RuiInput;
         "rui-loader": RuiLoader;
         "rui-modal": RuiModal;
-        "rui-pagination": RuiPagination;
         "rui-pill": RuiPill;
         "rui-radio": RuiRadio;
         "rui-select": RuiSelect;
@@ -255,15 +211,12 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "rui-alert": LocalJSX.RuiAlert & JSXBase.HTMLAttributes<HTMLRuiAlertElement>;
             "rui-avatar": LocalJSX.RuiAvatar & JSXBase.HTMLAttributes<HTMLRuiAvatarElement>;
             "rui-button": LocalJSX.RuiButton & JSXBase.HTMLAttributes<HTMLRuiButtonElement>;
             "rui-checkbox": LocalJSX.RuiCheckbox & JSXBase.HTMLAttributes<HTMLRuiCheckboxElement>;
-            "rui-divider": LocalJSX.RuiDivider & JSXBase.HTMLAttributes<HTMLRuiDividerElement>;
             "rui-input": LocalJSX.RuiInput & JSXBase.HTMLAttributes<HTMLRuiInputElement>;
             "rui-loader": LocalJSX.RuiLoader & JSXBase.HTMLAttributes<HTMLRuiLoaderElement>;
             "rui-modal": LocalJSX.RuiModal & JSXBase.HTMLAttributes<HTMLRuiModalElement>;
-            "rui-pagination": LocalJSX.RuiPagination & JSXBase.HTMLAttributes<HTMLRuiPaginationElement>;
             "rui-pill": LocalJSX.RuiPill & JSXBase.HTMLAttributes<HTMLRuiPillElement>;
             "rui-radio": LocalJSX.RuiRadio & JSXBase.HTMLAttributes<HTMLRuiRadioElement>;
             "rui-select": LocalJSX.RuiSelect & JSXBase.HTMLAttributes<HTMLRuiSelectElement>;

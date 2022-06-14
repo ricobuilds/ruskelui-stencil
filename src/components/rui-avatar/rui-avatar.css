@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* :root {
+    --rui-avatar-sm: 16px;
+    --rui-avatar-md: 24px;
+    --rui-avatar-lg: 32px;
+    --rui-avatar-xl: 48px;
+    --rui-avatar-2x: 64px;
+    --rui-border-color: #000;
+}
+
+.avatar-sm {
+    width: var(--rui-avatar-sm);
+    height: var(--rui-avatar-sm);
+    border: 1px solid var(--rui-border-color);
+}
+
+.avatar-md {
+    width: var(--rui-avatar-md);
+    height: var(--rui-avatar-md);
+}
+
+.avatar-lg {
+    width: var(--rui-avatar-lg);
+    height: var(--rui-avatar-lg);
+}
+
+.avatar-xl {
+    width: var(--rui-avatar-xl);
+    height: var(--rui-avatar-xl);
+}
+
+.avatar-2xl {
+    width: var(--rui-avatar-2x);
+    height: var(--rui-avatar-2x);
+} */
