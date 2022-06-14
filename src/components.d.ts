@@ -7,6 +7,7 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface RuiAvatar {
+        "name"?: string;
         "size"?: "6" | "8" | "10" | "12";
         "type"?: "base" | "rounded";
     }
@@ -145,6 +146,7 @@ declare global {
 }
 declare namespace LocalJSX {
     interface RuiAvatar {
+        "name"?: string;
         "size"?: "6" | "8" | "10" | "12";
         "type"?: "base" | "rounded";
     }
